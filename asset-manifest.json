@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7ac5ed35.css",
+    "main.js": "/static/js/main.b7ed9295.js",
+    "static/js/787.15f32a39.chunk.js": "/static/js/787.15f32a39.chunk.js",
+    "static/media/background_cantor.jpg": "/static/media/background_cantor.9ee90238a9bcfb20ba84.jpg",
+    "index.html": "/index.html",
+    "main.7ac5ed35.css.map": "/static/css/main.7ac5ed35.css.map",
+    "main.b7ed9295.js.map": "/static/js/main.b7ed9295.js.map",
+    "787.15f32a39.chunk.js.map": "/static/js/787.15f32a39.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ac5ed35.css",
+    "static/js/main.b7ed9295.js"
+  ]
+}
