@@ -13,22 +13,21 @@
     margin: 0 auto;
 }
 
-.form__input {
-    padding: 5px;
-    margin-bottom: 20px;
-    width: 105px;
-}
-
 .form__output {
     padding: 5px 5px 5px 0px;
 }
 
-.form__button {
-    margin: 10px 0px 0px 2px;
+.form__input {
     padding: 5px;
-    box-shadow: 1px 2px 5px rgb(82, 80, 80);
-    background-color: orange;
-    color: white;
-    width: 496px;
-    border-radius: 10px;
+    margin-bottom: 20px;    
+    width: 100px;
+    height: 25px;
+    background-color: #eee;
+}
+
+.form__select {
+    margin-left: 25px;
+    border: grey;
+    background-color: #eee;
+
 }
