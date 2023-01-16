@@ -1,7 +1,7 @@
 import "./style.css";
 import { useState } from 'react';
-import currencies from "../Currencies";
 import Result from "../Result";
+import currencies from "../currencies.js";
 
 const Form = () => {
   const [currency, setCurrency] = useState(currencies[0].name);
@@ -19,7 +19,8 @@ const Form = () => {
           Posiadam: <input
             className="form__input"
             value={amount}
-            onChange={({ target }) => setAmount(target.value)}
+            onChange={({ target }) =>
+              setAmount(target.value)}
             required type="number"
             min="0"
             step="0.01"
@@ -36,7 +37,7 @@ const Form = () => {
           >
             {currencies.map((currency => (
               <option
-                key={currency.id}
+                key={currency.name}
                 value={currency.name}
               >
                 {currency.valueName}
