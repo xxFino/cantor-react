@@ -1,10 +1,10 @@
 const currencies =
 [
-  { name: "EUR", rate: 4.65, valueName: "Euro" },
-  { name: "USD", rate: 4.38, valueName: "Dolar amerykański" },
-  { name: "GPB", rate: 5.34, valueName: "Funt brytyjski" },
-  { name: "CHF", rate: 4.73, valueName: "Frank szwajcarski" },
-  { name: "NOK", rate: 0.44, valueName: "Korona norweska" }
+  { code: "EUR", rate: 4.65, name: "Euro" },
+  { code: "USD", rate: 4.38, name: "Dolar amerykański" },
+  { code: "GPB", rate: 5.34, name: "Funt brytyjski" },
+  { code: "CHF", rate: 4.73, name: "Frank szwajcarski" },
+  { code: "NOK", rate: 0.44, name: "Korona norweska" }
 ];
 
 export default currencies;

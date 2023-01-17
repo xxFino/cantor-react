@@ -4,10 +4,10 @@ import Result from "../Result";
 import currencies from "../currencies.js";
 
 const Form = () => {
-  const [currency, setCurrency] = useState(currencies[0].name);
+  const [currency, setCurrency] = useState(currencies[0].code);
   const [amount, setAmount] = useState("");
 
-  const rate = currencies.find(({ name }) => name === currency).rate;
+  const rate = currencies.find(({ code }) => code === currency).rate;
 
   return (
     <form className="form">
@@ -37,10 +37,10 @@ const Form = () => {
           >
             {currencies.map((currency => (
               <option
-                key={currency.name}
-                value={currency.name}
+                key={currency.code}
+                value={currency.code}
               >
-                {currency.valueName}
+                {currency.name}
               </option>
             )))};
           </select>
