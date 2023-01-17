@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/cantor-react/static/css/main.fafe57ec.css",
-    "main.js": "/cantor-react/static/js/main.7f2c132a.js",
+    "main.js": "/cantor-react/static/js/main.55099fa5.js",
     "static/js/787.15f32a39.chunk.js": "/cantor-react/static/js/787.15f32a39.chunk.js",
     "static/media/background_cantor.jpg": "/cantor-react/static/media/background_cantor.ba0cec984364da7c7326.jpg",
     "index.html": "/cantor-react/index.html",
     "main.fafe57ec.css.map": "/cantor-react/static/css/main.fafe57ec.css.map",
-    "main.7f2c132a.js.map": "/cantor-react/static/js/main.7f2c132a.js.map",
+    "main.55099fa5.js.map": "/cantor-react/static/js/main.55099fa5.js.map",
     "787.15f32a39.chunk.js.map": "/cantor-react/static/js/787.15f32a39.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fafe57ec.css",
-    "static/js/main.7f2c132a.js"
+    "static/js/main.55099fa5.js"
   ]
 }
