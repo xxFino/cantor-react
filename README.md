@@ -18,6 +18,9 @@ In my website I used this technologies:
 - Java Script
 - React.js
 
+## Update
+I also added localStorage to the program.
+
 ## Available Scripts
 
 In the project directory, you can run:
