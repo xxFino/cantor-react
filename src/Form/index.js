@@ -2,6 +2,7 @@ import "./style.css";
 import { useState } from 'react';
 import Result from "../Result";
 import currencies from "../currencies.js";
+import { Clock } from "../Clock";
 
 const Form = () => {
   const [currency, setCurrency] = useState(currencies[0].code);
@@ -11,6 +12,9 @@ const Form = () => {
 
   return (
     <form className="form">
+      <div>
+        <Clock />
+      </div>
       <legend className="form__legend">
         <strong>Kalkulator walut</strong>
       </legend>
