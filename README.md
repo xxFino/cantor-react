@@ -19,7 +19,7 @@ In my website I used this technologies:
 - React.js
 
 ## Update
-I also added localStorage to the program.
+I also added date and clock to the program.
 
 ## Available Scripts
 
