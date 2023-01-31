@@ -1,8 +1,8 @@
-import "./style.css";
+import { HeaderTitle } from "./styled";
 
 const Header = () => (
     <header>
-        <h1 className="header">Witaj w internetowym kantorze gdzie możesz wymienić swoją walutę</h1>
+        <HeaderTitle>Witaj w internetowym kantorze gdzie możesz wymienić swoją walutę</HeaderTitle>
     </header>
 );
 

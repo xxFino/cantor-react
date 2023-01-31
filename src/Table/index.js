@@ -1,20 +1,20 @@
-import "./style.css";
+import { TableStyle, TableCaption, TableCell, TableHeader } from "./styled"
 import currencies from "../currencies";
 
 const Table = () => (
-  <table className="table">
-    <caption className="table__caption"><strong>Obecne kursy walut</strong></caption>
-    <tr className="table__row">
-      <th className="table__ceel table__cell--upper" scope="col">Waluta</th>
-      <th className="table__ceel table__cell--upper" scope="col">Kurs</th>
+  <TableStyle>
+    <TableCaption><strong>Obecne kursy walut</strong></TableCaption>
+    <tr>
+      <TableHeader scope="col">Waluta</TableHeader>
+      <TableHeader className="table__cell table__cell--upper" scope="col">Kurs</TableHeader>
     </tr>
     {currencies.map(({ rate, name }) => (
-      <tr className="table__row" key={name}>
-        <th className="table__cell" scope="row">{name}</th>
-        <td className="table__cell">{rate}</td>
+      <tr key={name}>
+        <TableCell scope="row">{name}</TableCell>
+        <TableCell>{rate}</TableCell>
       </tr>
     ))}
-  </table>
+  </TableStyle>
 );
 
 export default Table;

@@ -1,9 +1,9 @@
-import "./style.css";
+import { FooterStyle } from "./styled";
 
 const Footer = () => (
-    <footer className="footer">
+    <FooterStyle>
         <strong>Dziękujemy za skorzystanie z naszych usług! <br /><br />Zapraszamy ponownie</strong>
-    </footer>
+    </FooterStyle>
 );
 
 export default Footer;

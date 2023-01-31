@@ -1,4 +1,4 @@
-import "./style.css";
+import { FormContainer, Legend, Fieldset, Input, Select } from "./styled";
 import { useState } from 'react';
 import Result from "../Result";
 import currencies from "../currencies.js";
@@ -11,17 +11,16 @@ const Form = () => {
   const rate = currencies.find(({ code }) => code === currency).rate;
 
   return (
-    <form className="form">
+    <FormContainer>
       <div>
         <Clock />
       </div>
-      <legend className="form__legend">
+      <Legend>
         <strong>Kalkulator walut</strong>
-      </legend>
-      <fieldset className="form__fieldset">
+      </Legend>
+      <Fieldset>
         <label>
-          Posiadam: <input
-            className="form__input"
+          Posiadam: <Input
             value={amount}
             onChange={({ target }) =>
               setAmount(target.value)}
@@ -34,8 +33,7 @@ const Form = () => {
           <label>
             <Result amount={amount} rate={rate} />
           </label>
-          <select
-            className="form__select"
+          <Select
             value={currency}
             onChange={({ target }) => setCurrency(target.value)}
           >
@@ -47,10 +45,10 @@ const Form = () => {
                 {currency.name}
               </option>
             )))};
-          </select>
+          </Select>
         </p>
-      </fieldset>
-    </form>
+      </Fieldset>
+    </FormContainer>
   )
 };
 
