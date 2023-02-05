@@ -9,7 +9,7 @@ export const useCurrentDate = () => {
         }, 1000);
 
         return () => {
-            clearInterval(timeId)
+            clearInterval(timeId);
         };
     }, []);
 
