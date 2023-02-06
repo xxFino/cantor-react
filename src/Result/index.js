@@ -1,5 +1,5 @@
-const Result = ({ amount, rate }) => {
-    const result = amount / rate;
+const Result = ({ amount, currency }) => {
+    const result = amount / currency;
     
     return (
         <>
