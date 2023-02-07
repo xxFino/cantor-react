@@ -1,11 +1,13 @@
-const Result = ({ amount, currency }) => {
-    const result = amount / currency;
-    
-    return (
+const Result = ({ result }) => {
+    !!result && (
         <>
-        Otrzymam: <strong>{result.toFixed(2)}</strong>
+            {result.startAmount.toFixed(2)}&nbsp;PLN&nbsp;=
+            {" "}
+            <strong>
+                {result.endAmount.toFixed(2)}&nbsp;{result.currency}
+            </strong>
         </>
-    );
+    )
 };
 
 export default Result;

@@ -5,13 +5,24 @@ import { Clock } from "../Clock";
 import { useRatesData } from "./useRatesData";
 
 const Form = () => {
-  const [currency, setCurrency] = useState("");
-  const [amount, setAmount] = useState("");
+  const [currency, setCurrency] = useState("EUR");
+  const [amount, setAmount] = useState("1");
+  const [result,  setResult] = useState();
   
   const ratesData = useRatesData();
-  
+
+  const calculateResult = (currency, amount) => {
+    const rate = ratesData.rates[currency];
+
+    setResult({
+      startAmount: +amount,
+      endAmount: amount * rate,
+      currency,
+    });
+  }
+
   return (
-    <FormContainer>
+    <FormContainer calculateResult={calculateResult}>
       <div>
         <Clock />
       </div>
@@ -39,11 +50,11 @@ const Form = () => {
                   required type="number"
                   min="0"
                   step="0.01"
-                /> PLN
+                /> 
               </label>
               <p>
                 <label>
-                  <Result amount={amount} rate={ratesData.rates[currency]} />
+                  <Result result={result} />
                 </label>
                 <Select
                   value={currency}
