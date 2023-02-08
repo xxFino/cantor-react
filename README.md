@@ -17,9 +17,14 @@ In my website I used this technologies:
 - CSS
 - Java Script
 - React.js
+- Axios, async, await
+- Hooks
+- BEM
+- Immutability
+- Styled components
 
 ## Update
-I also added date and clock to the program.
+I also added date and clock to the program and from now we are taking curriencies rates from website API. 
 
 ## Available Scripts
 
