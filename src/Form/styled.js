@@ -12,6 +12,7 @@ export const FormContainer = styled.form`
 
 export const Legend = styled.legend`
     margin: 0 auto;
+    font-size: 20px;
 `;
 
 export const Fieldset = styled.fieldset`
@@ -19,6 +20,7 @@ export const Fieldset = styled.fieldset`
 `;
 
 export const Input = styled.input`
+    margin-left: 5px ;
     padding: 5px;
     margin-bottom: 20px;    
     width: 100px;
@@ -27,7 +29,7 @@ export const Input = styled.input`
 `;
 
 export const Select = styled.select`
-    margin-left: 25px;
+    margin-left: 15px;
     border: grey;
     background-color: #eee;
 `;
@@ -38,4 +40,15 @@ export const Loading = styled.p`
 
 export const Failure = styled.p`
     color: crimson;
+`;
+
+export const Button = styled.button`   
+    width: 500px;
+    color: teal;
+    border: none;
+    font-size: 18px;
+
+    &:hover {
+        color: hsl(180, 100%, 35%);
+    }
 `;

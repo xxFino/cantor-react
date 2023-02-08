@@ -1,4 +1,4 @@
-import { FormContainer, Legend, Fieldset, Input, Select, Loading, Failure } from "./styled";
+import { FormContainer, Legend, Fieldset, Input, Select, Loading, Failure, Button } from "./styled";
 import { useState } from 'react';
 import Result from "../Result";
 import { Clock } from "../Clock";
@@ -6,12 +6,13 @@ import { useRatesData } from "./useRatesData";
 
 const Form = () => {
   const [currency, setCurrency] = useState("EUR");
-  const [amount, setAmount] = useState("1");
+  const [amount, setAmount] = useState("");
   const [result,  setResult] = useState();
   
   const ratesData = useRatesData();
 
-  const calculateResult = (currency, amount) => {
+  const calculateResult = (event) => {
+    event.preventDefault();
     const rate = ratesData.rates[currency];
 
     setResult({
@@ -22,7 +23,7 @@ const Form = () => {
   }
 
   return (
-    <FormContainer calculateResult={calculateResult}>
+    <FormContainer onSubmit={calculateResult}>
       <div>
         <Clock />
       </div>
@@ -53,7 +54,7 @@ const Form = () => {
                 /> 
               </label>
               <p>
-                <label>
+                <label> Otrzymam:
                   <Result result={result} />
                 </label>
                 <Select
@@ -73,6 +74,7 @@ const Form = () => {
             </Fieldset>
           )
       )}
+      <Button>Przelicz</Button>
     </FormContainer>
   )
 };
