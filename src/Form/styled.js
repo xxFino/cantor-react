@@ -43,10 +43,11 @@ export const Failure = styled.p`
 `;
 
 export const Button = styled.button`   
-    width: 500px;
+    margin-left: 215px;
     color: teal;
     border: none;
     font-size: 18px;
+    background-color: #aaa;
 
     &:hover {
         color: hsl(180, 100%, 35%);
