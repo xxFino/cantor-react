@@ -7,8 +7,8 @@ import { useRatesData } from "./useRatesData";
 const Form = () => {
   const [currency, setCurrency] = useState("EUR");
   const [amount, setAmount] = useState("");
-  const [result,  setResult] = useState();
-  
+  const [result, setResult] = useState();
+
   const ratesData = useRatesData();
 
   const calculateResult = (event) => {
@@ -51,12 +51,10 @@ const Form = () => {
                   required type="number"
                   min="0"
                   step="0.01"
-                /> 
+                /> PLN
               </label>
               <p>
-                <label> Otrzymam:
-                  <Result result={result} />
-                </label>
+                Wybierz walutę:
                 <Select
                   value={currency}
                   onChange={({ target }) => setCurrency(target.value)}
@@ -71,9 +69,14 @@ const Form = () => {
                   )))};
                 </Select>
               </p>
+              <p>
+                <label> Otrzymam:
+                  <Result result={result} />
+                </label>
+              </p>
             </Fieldset>
           )
-      )}
+        )}
       <Button>Przelicz</Button>
     </FormContainer>
   )
