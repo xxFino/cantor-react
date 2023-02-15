@@ -8,6 +8,7 @@ export const FormContainer = styled.form`
     background-color: #eee;
     box-shadow: 2px 2px 8px rgb(82, 80, 80);
     border-radius: 3%;
+    height: 260px;
 `;
 
 export const Legend = styled.legend`
@@ -21,17 +22,18 @@ export const Fieldset = styled.fieldset`
 
 export const Input = styled.input`
     margin-left: 5px ;
-    padding: 5px;
-    margin-bottom: 20px;    
+    padding: 5px;      
     width: 100px;
     height: 25px;
     background-color: #eee;
+    margin-right: 5px;
 `;
 
 export const Select = styled.select`
-    margin-left: 15px;
+    margin-left: 5px;
     border: grey;
     background-color: #eee;
+    height: 25px;
 `;
 
 export const Loading = styled.p`
